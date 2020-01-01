@@ -16,6 +16,8 @@ public class Solution {
 
         String s2 = sc.nextLine();
 
+        sc.close();
+
         int i, j;
         i = s1.length();
         j = s2.length();
