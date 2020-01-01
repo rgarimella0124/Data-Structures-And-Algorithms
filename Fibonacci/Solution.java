@@ -1,11 +1,11 @@
 package Fibonacci;
 
 import java.util.Scanner;
+
 /**
- * Java program to calculate and print Fibonacci number using both recursion
- * and Iteration.
- * Fibonacci number is sum of previous two Fibonacci numbers fn= fn-1+ fn-2
- * first 10 Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+ * Java program to calculate and print Fibonacci number using both recursion and
+ * Iteration. Fibonacci number is sum of previous two Fibonacci numbers fn=
+ * fn-1+ fn-2 first 10 Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
  **/
 public class Solution {
 
@@ -13,13 +13,15 @@ public class Solution {
 
         // input to print Fibonacci series upto how many numbers
         System.out.println("Enter number upto which Fibonacci series to print: ");
-        final int number = new Scanner(System.in).nextInt();
+        Scanner scnr = new Scanner(System.in);
+        final int number = scnr.nextInt();
 
         System.out.println("Fibonacci series upto " + number + " numbers : ");
         // printing Fibonacci series upto number
         for (int i = 1; i <= number; i++) {
             System.out.print(fibonacci2(i) + " ");
         }
+        scnr.close();
 
     }
 
@@ -43,20 +45,20 @@ public class Solution {
      * @return Fibonacci number
      */
     public static int fibonacci2(final int number) {
-        if(number == 1 || number == 2){
+        if (number == 1 || number == 2) {
             return 1;
         }
-        int fibo1=1, fibo2=1, fibonacci=1;
-        for(int i= 3; i<= number; i++){
-           
-            //Fibonacci number is sum of previous two Fibonacci number
-            fibonacci = fibo1 + fibo2;             
+        int fibo1 = 1, fibo2 = 1, fibonacci = 1;
+        for (int i = 3; i <= number; i++) {
+
+            // Fibonacci number is sum of previous two Fibonacci number
+            fibonacci = fibo1 + fibo2;
             fibo1 = fibo2;
             fibo2 = fibonacci;
-          
+
         }
-        return fibonacci; //Fibonacci number
-      
-    }   
-  
+        return fibonacci; // Fibonacci number
+
+    }
+
 }
