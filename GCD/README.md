@@ -1,0 +1,1 @@
+Write a find GCD of two numbers in Java.
