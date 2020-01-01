@@ -1,0 +1,1 @@
+Write a Java program to Java Program to remove repeated elements from ArrayList.
