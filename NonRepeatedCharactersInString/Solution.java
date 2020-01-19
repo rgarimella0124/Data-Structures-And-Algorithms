@@ -12,6 +12,7 @@ public class Solution {
             arr[j] = str.charAt(j);
         }
         final char found = searchchar(str, arr);
+        s.close();
         System.out.println("The first non repeated char is " + found);
     }
 
