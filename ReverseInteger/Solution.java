@@ -9,7 +9,6 @@ public class Solution {
         final Scanner sc=new Scanner(System.in);
         final int number = sc.nextInt();
         sc.close();
-        final int reverse = reverse(number);
         System.out.println("Reverse of number: " + number + " is " + reverse(number));  
    
     }
